@@ -1,0 +1,274 @@
+* {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 24px;
+}
+
+
+#header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 16px 120px;
+    top: 0;   
+}
+
+h1 {
+    font-size: 64px;
+    display: block;
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+    font-size: 24px;
+    margin-right: 24px;
+}
+
+p {
+    font-size: 24px;
+    color: #979797;
+}
+
+a:hover {
+    color: #ffc108;
+}
+
+section {
+    padding: 16px 128px 16px 128px;
+    margin: 0px;
+    display: block;
+}
+
+#landing {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 64px 128px;
+}
+
+#landing-left {
+    width: 50%;
+    margin-right: 32px;
+}
+
+#landing-left > h1{
+    font-size: 50px;
+}
+
+#landing-left p {
+    color: #979797;
+}
+
+.btn {
+    background-color: #ffc108;
+    color: white;
+    border: 1px solid #fdb205;
+    padding: 8px 24px;
+    margin-right: 16px;
+    
+}
+
+.btn:hover {
+    cursor: pointer;
+}
+
+.btn-alt {
+    background-color: white;
+    color: black;
+}
+
+#landing-right {
+    width: 50%;
+}
+
+#about {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#about-left {
+    width: 50%;
+}
+
+#about-right {
+    width: 50%;
+}
+
+#about-stats {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-content: center;
+    text-align: center;
+}
+
+.about-data {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.about-data .bar {
+    width: 50px;
+    height: 10px ;
+    background-color: #ffc108;
+    text-align: center;
+}
+
+.service-head {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.service-head h1 {
+    position: relative;
+}
+
+.service-head > div > h1:before {
+    content: "";
+    width: 60px;
+    height: 60px;
+    background-image: url(images/accent1.svg);
+    position: absolute;
+    left: -20px;
+    top: -20px;
+    z-index: -1;
+}
+
+.service-item {
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    justify-content: center;
+    align-items: center;
+    column-gap:128px ;
+    margin-top: 72px;
+}
+
+.service-stats {
+    align-items: center;
+    box-shadow: 2px 4px 4px rgba(0, 0, 0, 0.1);
+}
+
+.service-stats img{
+    width: 100%;
+}
+
+.contact {
+    margin-top: 72px;
+}
+
+.contact-head {
+
+}
+
+.contact-head h1 {
+    position: relative;
+}
+
+.contact-head > h1:before {
+    content: "";
+    width: 60px;
+    height: 60px;
+    background-image:url(images/accent2.svg) ;
+    position: absolute;
+    left: -20px;
+    top: -20px;
+    z-index: -1;
+}
+
+.contact-content {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 72px;
+    column-gap: 128px;
+
+}
+
+.contact-content > div, .contact-detail > form {
+    width: 50%;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    border: 3px solid #ffc108;
+    padding: 64px 32px;
+}
+
+form > h2 {
+    font-size: 32px;
+    text-align: center;
+}
+
+
+.form  {
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    column-gap: 32px;
+    margin-top: 32px;
+    grid-template-areas: "name subject"
+                         "email phone"
+                         "message message";
+}
+
+#input-name {
+    grid-area: name;
+}
+
+#input-subject {
+    grid-area: subject;
+}
+
+#input-email {
+    grid-area: email;
+}
+
+#input-phone {
+    grid-area: phone;
+}
+
+#input-message {
+    grid-area: message;
+}
+
+.input-group {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 32px;
+}
+
+.input-group label {
+    font-weight: 700;
+    margin-bottom: 16px;
+    font-size: 24px;
+}
+
+.input-group input {
+    border: none;
+    outline: none;
+    border-bottom: solid black 1px;
+    font-size: 24px;
+}
+
+footer {
+    padding: 16px 128px;
+    background-color: #ffc108;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+footer p {
+    color: white;
+    width: 50%;
+}
+
+.social-icon {
+    display: flex;
+    gap: 16px;
+}
+
+
